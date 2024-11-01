@@ -1,0 +1,12 @@
+[package]
+name = "logger"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.41.0", features = ["full"] }
+colored = "2.1.0"
+end = { path = "src/end" }
+
+[workspace]
+members = ["src/end"]
